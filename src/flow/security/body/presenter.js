@@ -6,14 +6,14 @@ const Presenter = props => {
     const { getRoutes } = props;
     const routes = getRoutes();
     return (
-        <div className="container-fluid">
+        <div>
             <Switch>
                 {
                     routes.map((val, ind) => {
                         if (!val.component) {
                             return null
                         }
-                        return (<Route key={'route-' + ind} path={val.path} render={() => <val.component {...props} />} />)
+                        return (<Route key={'route-sec-' + ind} path={val.path} render={() => <val.component {...props} />} />)
                     })
                 }
             </Switch>

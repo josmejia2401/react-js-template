@@ -6,11 +6,10 @@ class Screen extends Component {
     constructor(props) {
         super(props);
     }
-
     render() {
         return (
             <Presenter
-                props={this.props}
+                {...this.props}
             />
         );
     }

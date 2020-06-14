@@ -19,7 +19,7 @@ class Screen extends Component {
     render() {
         return (
             <Presenter
-                props={this.props}
+                {...this.props}
                 onToggled={this._onToggled}
                 onToggledMenuUser={this._onToggledMenuUser}
             />

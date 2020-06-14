@@ -2,7 +2,7 @@ import SignInScreen from '../../views/signin/index'
 
 export default [
     {
-        name: 'Seguridad',
+        name: 'SignIn',
         path: '/security/sign-in',
         component:SignInScreen
     }

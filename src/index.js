@@ -9,13 +9,20 @@ import { Provider } from "react-redux";
 import { store } from "./redux/root.reducer"
 
 
-const Root = ({ storex }) => (
+/*const Root = ({ storex }) => (
   <React.StrictMode>
     <Provider store={storex}>
       <App/>
     </Provider>
   </React.StrictMode>
+);*/
+
+const Root = ({ storex }) => (
+    <Provider store={storex}>
+      <App/>
+    </Provider>
 );
+
 
 Root.propTypes = {
   storex: PropTypes.object.isRequired,
